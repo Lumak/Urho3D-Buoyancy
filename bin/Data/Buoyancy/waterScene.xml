@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="0" />
+	<attribute name="Next Replicated Node ID" value="18" />
+	<attribute name="Next Replicated Component ID" value="44" />
+	<attribute name="Next Local Node ID" value="16777218" />
+	<attribute name="Next Local Component ID" value="16777240" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="PhysicsWorld" id="1" />
+	<component type="Octree" id="2" />
+	<component type="DebugRenderer" id="3" />
+	<node id="2">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Zone" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Zone" id="4">
+			<attribute name="Bounding Box Min" value="-1000 -1000 -1000" />
+			<attribute name="Bounding Box Max" value="1000 1000 1000" />
+			<attribute name="Ambient Color" value="0.25 0.25 0.25 1" />
+		</component>
+	</node>
+	<node id="3">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="GlobalLight" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="0.836516 0.482963 0.224144 -0.12941" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="5">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Shadow Intensity" value="0.5" />
+		</component>
+	</node>
+	<node id="4">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="level1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 -0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="6">
+			<attribute name="Model" value="Model;Buoyancy/Models/level1.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="14" />
+		<component type="CollisionShape" id="15">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/level1.mdl" />
+		</component>
+	</node>
+	<node id="5">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="water" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 1.44558 -0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 0.999" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="7">
+			<attribute name="Model" value="Model;Buoyancy/Models/water.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/waterMat.xml" />
+		</component>
+		<component type="RigidBody" id="24">
+			<attribute name="Physics Position" value="0 1.44558 -0" />
+			<attribute name="Collision Layer" value="2" />
+			<attribute name="Use Gravity" value="false" />
+			<attribute name="Is Trigger" value="true" />
+		</component>
+		<component type="CollisionShape" id="25">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/water.mdl" />
+		</component>
+	</node>
+	<node id="6">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="waterplatform" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-20.5856 1.43618 -0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="8">
+			<attribute name="Model" value="Model;Buoyancy/Models/waterplatform.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="16">
+			<attribute name="Physics Position" value="-20.5856 1.43618 0" />
+		</component>
+		<component type="CollisionShape" id="17">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/waterplatform.mdl" />
+		</component>
+	</node>
+	<node id="7">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="platramp" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-22.4521 1.436 -6.49789" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="9">
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="18">
+			<attribute name="Physics Position" value="-22.4521 1.436 -6.49789" />
+		</component>
+		<component type="CollisionShape" id="19">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+		</component>
+	</node>
+	<node id="8">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="platramp1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-22.4521 1.436 6.50269" />
+		<attribute name="Rotation" value="4.37114e-08 0 1 -0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10">
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+			<attribute name="Material" value="Buoyancy/Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="20">
+			<attribute name="Physics Rotation" value="4.37114e-08 0 1 0" />
+			<attribute name="Physics Position" value="-22.4521 1.436 6.50269" />
+		</component>
+		<component type="CollisionShape" id="21">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+		</component>
+	</node>
+	<node id="9">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="platramp2" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="22.4965 1.436 6.50269" />
+		<attribute name="Rotation" value="4.37114e-08 0 1 -0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="11">
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="26">
+			<attribute name="Physics Rotation" value="4.37114e-08 0 1 0" />
+			<attribute name="Physics Position" value="22.4965 1.436 6.50269" />
+		</component>
+		<component type="CollisionShape" id="27">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+		</component>
+	</node>
+	<node id="10">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="waterplatform1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="20.6363 1.43618 -0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="12">
+			<attribute name="Model" value="Model;Buoyancy/Models/waterplatform.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="22">
+			<attribute name="Physics Position" value="20.6363 1.43618 0" />
+		</component>
+		<component type="CollisionShape" id="23">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/waterplatform.mdl" />
+		</component>
+	</node>
+	<node id="11">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="platramp3" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="22.5031 1.436 -6.49789" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="13">
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="24">
+			<attribute name="Physics Position" value="22.5031 1.436 -6.49789" />
+		</component>
+		<component type="CollisionShape" id="25">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Buoyancy/Models/platramp.mdl" />
+		</component>
+	</node>
+	<node id="12">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="playerSpawn" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-19.1212 3.96273 -0.10885" />
+		<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+	</node>
+	<node id="13">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="floatingCylind1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-13.307 3.26323 -1.960484" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="3 1.2 3" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="29">
+			<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="30">
+			<attribute name="Physics Position" value="-13.307 3.26323 -1.960484" />
+			<attribute name="Mass" value="3.5" />
+		</component>
+		<component type="CollisionShape" id="31">
+			<attribute name="Shape Type" value="Cylinder" />
+		</component>
+	</node>
+	<node id="14">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="floatingCylind1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-11.4818 3.38818 -5.24333" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="3 1.5 3" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="32">
+			<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="33">
+			<attribute name="Physics Position" value="-11.4818 3.38818 -5.24333" />
+			<attribute name="Mass" value="4" />
+		</component>
+		<component type="CollisionShape" id="34">
+			<attribute name="Shape Type" value="Cylinder" />
+		</component>
+	</node>
+	<node id="15">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="floatingCylind1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="13.5579 3.26323 -0.960484" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="3 1.5 3" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="35">
+			<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="36">
+			<attribute name="Physics Position" value="13.5579 3.26323 -0.960484" />
+			<attribute name="Mass" value="4" />
+		</component>
+		<component type="CollisionShape" id="37">
+			<attribute name="Shape Type" value="Cylinder" />
+		</component>
+	</node>
+	<node id="16">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="floatBridge" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="2.78941 2.5996 -4.38799" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="20 0.9 2" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="38">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="39">
+			<attribute name="Physics Position" value="2.78941 2.5996 -4.38799" />
+			<attribute name="Mass" value="18" />
+		</component>
+		<component type="CollisionShape" id="40" />
+	</node>
+	<node id="17">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0.0128884 3.84131 -7.76105" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="2 2 2" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="41">
+			<attribute name="Model" value="Model;Models/Sphere.mdl" />
+			<attribute name="Material" value="Material;Buoyancy/Materials/defaultMat.xml" />
+		</component>
+		<component type="RigidBody" id="42">
+			<attribute name="Physics Position" value="0.0128884 3.84131 -7.76105" />
+			<attribute name="Mass" value="0.7" />
+		</component>
+		<component type="CollisionShape" id="43">
+			<attribute name="Shape Type" value="Sphere" />
+		</component>
+	</node>
+</scene>
